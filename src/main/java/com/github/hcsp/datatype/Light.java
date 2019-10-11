@@ -13,12 +13,8 @@ public class Light {
 
     // 当灯亮时返回true，灭和未知状态返回false
     public boolean isOn() {
-        try {
-            if(on == true)
-                return true;
+        if (on==null)
             return false;
-        }catch (Exception e){
-            return false;
-        }
+        return on;
     }
 }
