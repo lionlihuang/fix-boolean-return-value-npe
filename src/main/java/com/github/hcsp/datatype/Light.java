@@ -13,7 +13,14 @@ public class Light {
 
     // 当灯亮时返回true，灭和未知状态返回false
     public boolean isOn() {
-        return on;
+        if(on == null)
+        {
+            System.out.println("状态未知,下面一行返回false");
+            return false;
+        }
+        else
+            return on;
+
     }
 
     public Boolean isOnRawValue() {
