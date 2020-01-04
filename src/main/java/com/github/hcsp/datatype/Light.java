@@ -16,7 +16,9 @@ public class Light {
     public boolean isOn() {
         if (on != null) {
             return on;
-        } else return false;
+        } else {
+            return false;
+        }
     }
 
     public Boolean isOnRawValue() {
